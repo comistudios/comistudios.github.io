@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor & 3D Artist Portfolio</title>
+    <meta name="description"
+        content="Portfolio of a highly skilled Video Editor and 3D Artist specializing in After Effects and short animations for content creators.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">CREATOR<span>.</span></div>
+        <div class="nav-links">
+            <a href="#work" class="magnetic" data-strength="20">Work</a>
+            <a href="#services" class="magnetic" data-strength="20">Expertise</a>
+            <a href="#contact" class="magnetic" data-strength="20">Contact</a>
+        </div>
+        <div class="menu-toggle magnetic" data-strength="20">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-subtitle reveal-text">HELLO, I AM A</div>
+                <h1 class="hero-title reveal-text">
+                    VISUAL <br>
+                    <span class="outline-text">ENGINEER</span>
+                </h1>
+                <p class="hero-description reveal-text">
+                    Specializing in high-end video editing, advanced After Effects, and immersive 3D animations for
+                    top-tier content creators.
+                </p>
+                <div class="hero-cta reveal-text">
+                    <a href="#contact" class="btn btn-primary magnetic" data-strength="50">
+                        <span class="btn-text">Let's Collaborate</span>
+                        <div class="btn-hover-effect"></div>
+                    </a>
+                    <a href="#work" class="btn btn-secondary magnetic" data-strength="30">
+                        <span class="btn-text">View Showreel</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Video Background -->
+            <div class="hero-background">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="public/Motion Graphics Animation 2 After Effects.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-overlay"></div>
+                <div class="glow-sphere"></div>
+                <div class="glow-sphere sphere-2"></div>
+            </div>
+        </section>
+
+        <!-- Selected Works Section -->
+        <section class="works" id="work">
+            <div class="section-header">
+                <h2 class="section-title reveal-text">SELECTED <br> WORKS</h2>
+                <p class="section-desc reveal-text">A curated collection of recent motion design and 3D projects.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card magnetic-wrap">
+                    <div class="project-image-container">
+                        <img src="public/After Effects project preview sceenshot 2.png" alt="AE 3D Workflow"
+                            class="project-image">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">VFX Motion Composition</h3>
+                        <p class="project-category">Advanced AE 3D Workflow</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card magnetic-wrap">
+                    <div class="project-image-container">
+                        <video autoplay muted loop playsinline class="project-video project-image">
+                            <source src="public/Dexter Edit (After Effects, Blender) 1080p.mp4" type="video/quicktime">
+                            <source src="public/Dexter Edit (After Effects, Blender) 1080p.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Dexter Tribute Reveal</h3>
+                        <p class="project-category">VFX Compositing / 3D Render</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card magnetic-wrap">
+                    <div class="project-image-container">
+                        <video autoplay muted loop playsinline class="project-video project-image">
+                            <source src="public/bmw drift preview video_1.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">BMW 3D Drift</h3>
+                        <p class="project-category">3D Render / AE Post</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card magnetic-wrap">
+                    <div class="project-image-container">
+                        <video autoplay muted loop playsinline class="project-video project-image">
+                            <source src="public/GAME OVER Animation 1 After Effects.mp4" type="video/quicktime">
+                            <source src="public/GAME OVER Animation 1 After Effects.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Retro PC Render</h3>
+                        <p class="project-category">Full AE 3D Animation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="section-header">
+                <h2 class="section-title reveal-text">EXPERTISE</h2>
+            </div>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <div class="service-content">
+                        <h3 class="service-name">Video Editing & VFX</h3>
+                        <p class="service-desc">Professional-grade editing in Premiere Pro and advanced VFX compositing
+                            in After Effects. Seamlessly blending footage with high-end motion design.</p>
+                    </div>
+                    <div class="service-icon">✦</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <div class="service-content">
+                        <h3 class="service-name">Advanced AE 3D</h3>
+                        <p class="service-desc">Expert knowledge of After Effects 3D space, cameras, and lighting.
+                            Creating depth and immersion natively within the Adobe ecosystem.</p>
+                    </div>
+                    <div class="service-icon">✦</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-number">03</div>
+                    <div class="service-content">
+                        <h3 class="service-name">Creative Direction</h3>
+                        <p class="service-desc">Comprehensive brand design and asset creation using Photoshop and
+                            Illustrator. From complex vectors to cinematic digital production.</p>
+                    </div>
+                    <div class="service-icon">✦</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee / Infinite Scroll text -->
+        <div class="marquee-container">
+            <div class="marquee" id="marquee">
+                <span>AVAILABLE FOR FREELANCE — LET'S CREATE SOMETHING EPIC </span>
+                <span class="star">✦</span>
+                <span>AVAILABLE FOR FREELANCE — LET'S CREATE SOMETHING EPIC </span>
+                <span class="star">✦</span>
+                <span>AVAILABLE FOR FREELANCE — LET'S CREATE SOMETHING EPIC </span>
+                <span class="star">✦</span>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <h2 class="contact-title reveal-text">READY TO <br> LEVEL UP?</h2>
+                <p class="contact-desc reveal-text">Drop me a line to discuss your next big project.</p>
+                <a href="mailto:milanfilipov023@gmail.com" class="email-link magnetic"
+                    data-strength="30">milanfilipov023@gmail.com</a>
+            </div>
+
+            <footer>
+                <div class="footer-links">
+                    <a href="https://www.instagram.com/c0mi.design/" target="_blank" class="magnetic"
+                        data-strength="15">Instagram</a>
+                    <a href="https://x.com/comistudios" target="_blank" class="magnetic" data-strength="15">X
+                        (Twitter)</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2026 Visual Engineer. All rights reserved.
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
